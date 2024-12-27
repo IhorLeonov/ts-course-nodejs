@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true, // Цей параметр дає змогу імпортувати модулі, які не мають експорту за замовчуванням, так, наче вони його мають. Це корисно під час роботи з деякими JavaScript-бібліотеками, які не визначають експорт за замовчуванням.
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "lib": ["ES2021"],
+    "module": "CommonJS", // Цей параметр говорить компілятору TypeScript використовувати модульну систему CommonJS під час транспіляції файлів TypeScript. CommonJS — це стандартна система модулів для Node.js, де використовується require().
+    "moduleResolution": "node", // Цей параметр говорить компілятору TypeScript використовувати стратегію дозволу модулів, засновану на Node.js.
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es2019"
+  }
+}
